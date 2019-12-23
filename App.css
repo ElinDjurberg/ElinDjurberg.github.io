@@ -1,0 +1,975 @@
+body {
+  text-align: center;
+  background-color: #2c3535;
+  height: 100%;
+}
+
+html{
+  height: 100%;
+  background-color: #2C3535;
+}
+
+a{
+  text-decoration-line: none;
+}
+
+h1, td, input{
+  color: #C9C7CE;
+  font-family: "Roboto";
+}
+
+p{
+  font-size:calc(14px + .8vw);
+  color: #C9C7CE;
+  font-family: 'Roboto', sans-serif;
+ 
+}
+
+.h3{
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.fitText {
+  display: inline-block;
+}
+
+.heightMax{
+  height: 100%;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.appHeader{
+	color: #DDDDDD;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	padding: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #2C3535;
+	margin-bottom: 10px;
+}
+
+#headerBars{
+display: inline-block;
+}
+
+.App-bottom{
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 9;
+  background-color: #2C3535;
+}
+
+.dots{
+  color: transparent;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 70px;
+}
+
+.head h1{
+  margin: 20px 0 0px 0;
+}
+
+#root{
+  height: 100%;
+}
+
+.removeMargin{
+  margin: 0;
+}
+
+/*Colours*/
+
+.greenButton{
+  background-color: #84b424;
+}
+
+.redButton{
+  background-color: #f92672;
+}
+
+.orangeButton{
+  background-color: #e3871b;
+}
+
+.purpleButton{
+  background-color: #6a549e;
+}
+
+
+input::-webkit-input-placeholder{
+  color: #262e2e;
+} 
+
+
+/*Bar*/
+button{
+  border-color: transparent;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 125px;
+  border-radius: 35px;
+  vertical-align: middle;
+  box-shadow: 7px 7px 5px #21211c;
+}
+
+input{
+  height: 40px;
+  border: none;
+  text-indent: 10px;
+  font-size: 20px;
+  background-color: #4C5454;
+  color: #C9C7CE;
+}
+
+.smalCirkel{
+  background-color: #609096;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border-width: 2px;
+  position: fixed;
+  top: 3%;
+  border-style: solid;
+  border-color: #C9C7CE;
+  box-shadow: 5px 5px 5px #21211c;
+  z-index: 130;
+}
+
+/*******************************************************************************************/
+
+
+
+
+
+/*DonuT*/
+.bodyDonut{
+  margin-bottom: 60px;
+}
+
+.donut{
+	position: relative;
+	/*margin: 30px auto 10px auto;*/
+	width: 100%;
+}
+
+.recTimeText{
+    font-size: calc(25px);
+    padding-top: 5px;
+}
+
+.recTime{
+	position: absolute;
+	width: 100%;
+	top: 31%;
+}
+
+.tableDonut{
+	width: 80%;
+	/*border: 1px solid white;*/
+	background-color: #262E2E;
+	padding: 15px 0 15px 0;
+  margin-top: 25px;
+}
+
+
+#myData{
+	margin: 20px auto 20px auto;
+  overflow: visible;
+}
+
+/*A box outside the little box?*/
+.color{
+	width: 15px;
+	padding-left: 25px;
+  padding-right: 25px;
+}
+
+/*The little colourful box?*/
+.box{
+	width: 16px;
+	height: 15px;
+}
+
+/*How the table's names are aligned*/
+.idLabel{
+	text-align: left;
+  height: 20px;
+}
+
+/*How time look inside of tableDonut*/
+.timeLabel{
+	width: 200px;
+	text-align: center;
+}
+/*******************************************************************************************/
+
+
+input:focus {
+  background-color: #C9C7CE;
+  color: black;
+}
+
+.titleDescrip{
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.title{
+  font-size: 30px;
+  margin-top: 35px;
+}
+
+#bars{
+  height: 100%;
+}
+
+.mainBody{
+  margin-bottom: 70px;
+}
+
+
+/*Bars - "child"*/
+.wrapperActivity{
+  height: 65px;
+  width: 70%;
+  margin: auto;
+  border-style: solid;
+  border-color: #C9C7CE;
+  border-width: 1px;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 25px;
+  background-color: #262e2e;
+  box-shadow: 7px 7px 5px #21211c;
+}
+
+
+.activityName{
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.activityPercentage{
+  float:left;
+  margin-top: 2px;
+  font-size: 15px;
+}
+
+.activityMoreDetails{
+  float:right;
+  margin-top: 2px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.activityDetails{
+  font-size: 12px;
+}
+
+.activityBar{
+  width: 100%;
+  height: 12px;
+  margin-top: 25px;
+  border-radius: 30px;
+}
+
+.activityProgress{
+  height: 12px;
+  margin-top: -12px;
+  border-radius: 30px;
+}
+
+
+
+/*******************************************************************************************/
+
+
+
+
+/*Form*/
+.pBlack{
+  color: black;
+}
+
+/*Add Activity sidan*/
+#Add{
+  height: 100vh;
+}
+
+.wrapperOutline{
+  border-style: solid;
+  border-color: #C9C7CE;
+  border-width: 1px;
+  margin-bottom: 15px;
+  height: 320px;
+  width: 80%;
+}
+
+/*Activity name*/
+.wrapperAddName{
+  background-color: inherit;
+  width: 80%;
+  margin: auto;
+}
+
+.addActivityText{
+  margin-bottom: 0;
+  float: left;
+  font-size: 18px;
+}
+
+.textBox{
+  width: 100%;
+}
+
+/*Start and End dates*/
+.wrapperDate{
+  display: inline-block;
+  width: 80%;
+  height: 100px;
+  background-color: inherit;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#dateText{
+  margin: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.wrapperStartDate{
+  width: 100%;
+  height: 60px;  
+  margin-top: 20px;
+  margin-bottom: 5px;
+  }
+
+.wrapperEndDate{
+  width: 100%;
+  height: 60px;
+}
+
+.dateBox{
+  width: 130px;
+  float: right;
+}
+
+.dateText{
+  width: 90px;
+  float: left;
+  height: 42px;
+  padding-top: 9px;
+}
+
+/*Set time*/
+.wrapperAddTime{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: right;
+  width: 80%;
+  margin: auto;
+  margin-top: 45px;
+}
+
+
+.addActivityTime{
+  float: left;
+  margin: 0;
+  width: 100px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.timeBox{
+  width: 45px;
+  float: right;
+  margin: 0;
+  text-align: justify;
+}
+
+.time{
+  width: 70%;
+  display: flex; 
+  justify-content: flex-end;
+  vertical-align: middle;
+  align-items: center;
+  float: right;
+}
+
+#min:focus{
+  text-indent: 10px;
+}
+
+.timeIndicator{
+  width: 18px;
+  margin: 0;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 2px;
+}
+
+/*Buttons in "Add Activity"*/
+.addActivityButton{
+  width: 80%;
+  padding: 30px 0;
+  margin: auto;
+}
+
+#formSaveButton{
+  float:right;
+}
+
+#formCancelButton{
+  float: left;
+}
+
+
+/*******************************************************************************************/
+
+
+
+
+/*ReportTime*/
+.home{
+  left: 5%;
+}
+
+.fa-home{
+  color: #C9C7CE;
+  margin-top: 4px;
+
+}
+
+.reportWrapper{
+  margin-top: 40px;
+}
+.wrapperReportTime{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: right;
+  width: 80%;
+  margin: auto;
+}
+
+/* Kod för att få texten över de linjerade rutorna alignade
+och snygga */
+.reportTimeText{
+text-align: left;
+}
+
+.selected{
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.selecting{
+  width: 70%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+
+.wrapperMain{
+  margin:20px;
+  padding-top:20px;
+  width: 80%;
+  margin: auto;
+}
+
+#timeStudied{
+  padding-top: 40px;
+}
+
+
+/* få hours and min rutorn i center */
+#centerDiv{
+  width: 50%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.divButtonCourseInfo{
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.addActivityTime{
+  float: left;
+  margin: 0;
+  width: 80px;
+  text-align: left;
+}
+
+.timeBox{
+  width: 50px;
+  float: left;
+  margin: 0;
+  padding: 1px;
+}
+
+.timeIndicator2{
+  width: 25px;
+  margin: 0;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+
+
+.border{
+  border-style: solid;
+  border-color: #C9C7CE;
+  border-width: 1px;
+  margin-top:-12px;
+}
+
+#activitySetTime{
+  height: 40px;
+  background-color:#242B2B; 
+  box-shadow: 5px 5px 5px #21211c;
+}
+
+/*drop down meny*/
+.dropMenu{
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  /*gör så att det ligger över om man hinner*/
+  background-color: #242B2B;
+  border-style: solid;
+  border-color: #C9C7CE;
+  border-width: 0.5px;
+  color: #C9C7CE;
+}
+
+/*Button i ReportTime */
+
+.arrow{
+  float: right;
+  margin-top: -19px;
+  margin-right: 13px;
+}
+
+.buttonText{
+  color: black;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.reportButtonText{
+  width: 200px;
+  height: 40px;
+  background-color: #fd971f;
+  float: center;
+  border-radius: 35px;
+  border-color: transparent;
+  margin-top: 20%;
+  margin-bottom: 59%;
+}
+/* Textfields i ReportTime */
+
+
+#hh{
+  width: 60px;
+  margin-right: 20px;
+}
+
+#mm{
+    width: 60px;
+}
+
+#hours{
+    font-size: 18px;
+}
+
+#min{
+    font-size: 18px;
+}
+
+/*******************************************************************************************/
+
+
+
+
+
+/*SofiaTime*/
+.deadlines{
+  width: 80%;
+  margin: auto;
+
+}
+.deadlines_in{
+  border:1px solid lightgray;
+    background-color: #242b2b;
+}
+
+#dead_title{
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+
+#wrapper {
+    padding: 30px 0;
+    width: 100%;
+    
+    overflow: hidden; /* add this to contain floated children */
+}
+#first {
+    width: 50%;
+    float:left; /* add this */
+    position: relative;
+}
+#second {
+     width: 49%;
+    float: left; /* add this */
+    position: relative;
+}
+.goal{
+  background-color: #242b2b;
+}
+
+#rhsText{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 30%;
+  color: #DDDDDD;
+}
+#rhsText p{
+  margin: 0px;
+  font-size: calc(16px);
+}
+
+#lhsText{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 30%;
+  color: #DDDDDD;
+}
+#lhsText p{
+  margin: 0px; 
+  font-size: calc(16px);
+}
+
+.goal{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+
+}
+
+.stack{
+  display: block;
+}
+
+
+#space{
+  margin-right:2%;
+  margin-left: 2%;
+}
+
+
+.reportButton_CourseInfo{
+  background-color: #e3871b;
+  width: 125px;
+  margin-top: 30px;
+  float: left;
+}
+
+.editButton{
+  background-color:  #84b424;
+  width: 125px;
+  margin-top: 30px;
+  margin-left: 2%;
+  float: right;
+}
+
+/*******************************************************************************************/
+
+
+
+
+
+/*Default questionmark and menu*/
+/*Menu*/
+.menuButton{
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #609096;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  border-width: 2px;
+  position: fixed;
+  bottom: 4%;
+  right: 10%;
+  border-style: solid;
+  border-color: #C9C7CE; 
+  color: #C9C7CE;
+  z-index: 120;
+  box-shadow: 7px 7px 5px #21211c;
+}
+
+.menuIcon{
+  margin-top: 22px;
+  margin-left: 3px;
+  width: 0;
+}
+
+.menu{
+  margin-top: 10.5px;
+  margin-left: 10px;
+  border-radius: 50px;
+  background-color: #C9C7CE;
+  position: relative;
+  height: 2px;
+  width: 45px;
+  object-position: center;
+}
+
+
+.menuClass{
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+
+}
+
+.menuID{
+  background-color: black;
+  opacity: 90%;
+  height: 100%;
+  position: fixed;
+  z-index: 101;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*.buttonWrapper{
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 111;
+  top: 0;
+}*/
+/*CCCCCCCCCCCCCCCCCCOOOOOOOOOOOOOOOOOOOOOOOOOOUUUUUUUUUUUUUUUUUUUUULLLLLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOOOORRRRRRRRRRRRRRRRRRRRSSSSSSSSS*/
+
+.feedBack{
+  height: 500px;
+  padding: 0 20%;
+  position: sticky;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  z-index: 220;
+  top: -60px;
+  background-color: #3b3a32;
+}
+
+.resetButton{
+  background-color: #6a549e ; /*#8874ad*/
+  opacity: 100%;
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 120;
+  box-shadow: 7px 7px 5px black;
+}
+
+
+.reportButton{
+  opacity: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 120;
+  box-shadow: 7px 7px 5px black;
+}
+
+
+.addButton{
+  background-color: #84b424;
+  opacity: 100%;
+  height: 50px;
+  position: absolute;
+  top: 28%;
+  border-radius: 35px;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 120;
+  box-shadow: 7px 7px 5px black;
+}
+
+.deleteButton{
+  background-color: #e02266;
+  height: 50px;
+  position: absolute;
+  top: 52%;
+  border-radius: 35px;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 120;
+ box-shadow: 7px 7px 5px black;
+}
+
+.buttonText{
+  color: black;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+}
+/********************************************************************************************/
+
+
+
+
+
+/*Questionmark*/
+.questionButton{
+  right: 5%;
+}
+
+.question{
+  font-size: 30px;
+  height: 100%;
+}
+
+.closeQuestion{
+  margin-top: -68px;
+  margin-left: 13px;
+  font-size: 30px;
+  position: fixed;
+}
+/*******************************************************************************************/
+
+
+
+
+/*Helppage*/
+/*Help page*/
+.questionWrapper{
+height: 100%;
+
+}
+
+.helpTextWrapper{
+	display: inline;
+	padding: 0 5%;
+}
+
+#helpHeader{
+  background-color: #2C3535;
+}
+
+.questionID{
+  height: inherit;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 129;
+  overflow: scroll;
+  background-color: #2C3535;
+}
+
+.questionText{
+  width: 80%;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 50px;
+  border-style: solid;
+  border-color: #C9C7CE;
+  border-width: 1px;
+  text-align: left;
+  padding: 5px 0;
+  background-color: #262e2e;
+}
+
+
+.helpTitle{	
+  font-size: 16px;
+  padding: 0 5%;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.helpText{
+	padding: 0 5%;
+  line-height: 160%;
+  font-size: 16px;
+}
+/*******************************************************************************************/
+
+.nextPage_left{
+  position: fixed;
+  top: 50%;
+  left:-32px;
+  background-color: #609096;
+  height: 60px;
+  width: 60px;
+  border-radius: 20px;
+  text-align: right;
+  font-size: 30px;
+  box-shadow: 7px 7px 5px #21211c;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.nextPage_right{
+  position: fixed;
+  top: 50%;
+  right:-32px;
+  background-color: #609096;
+  height: 60px;
+  width: 60px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 7px 7px 5px #21211c;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.nextPage_right p{
+  font-size: 30px;
+  margin: 8px 0 0 5px;
+}
+
+.nextPage_left p{
+  font-size: 30px;
+  margin: 8px 5px 0 0;
+}
